@@ -1,0 +1,165 @@
+ 
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://cdn.wallpapersafari.com/68/65/Gj9vlC.jpg'); /* Specify the path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.recipe {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+ 
+
+/* Style the search bar and button */
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#search {
+    padding: 10px;
+    width: 60%;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.footer-logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+}
+
+.footer-content {
+    color: white;
+}
+/* CSS for Contact Page */
+body.contact-page {
+    background-image: url('https://media.istockphoto.com/photos/contact-us-sign-on-a-wooden-desk-picture-id1091858450?k=6&m=1091858450&s=612x612&w=0&h=ipl1LmUiPUopt_q_RSuXHzjNsnquVyg9uPBJ5JruTQE=');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+button:hover {
+    background-color: #555;
+}
+/* CSS for Recipe Blocks */
+.recipe {
+    width: 250px;
+    margin: 10px;
+    padding: 10px; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+}
+
+.recipe img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.recipe h2 {
+    font-size: 18px; 
+    margin: 10px 0; 
+}
+
+.recipe p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.recipe a.btn {
+    display: block; 
+    text-align: center; 
+    background-color: #007BFF; 
+    color: #fff; 
+    padding: 10px; 
+    text-decoration: none; 
+}
+/* CSS for Pop-up Container */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    overflow: hidden;
+}
+
+.popup-content {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px #000;
+    padding: 20px;
+}
+
+/* CSS for Closing Button */
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+/* CSS for Ingredient List */
+.ingredients-list {
+    text-align: left; /* Align the text to the left */
+    margin-left: 0; /* Remove the left margin */
+    padding-left: 10px; /* Add some padding for indentation */
+}
+
+/* Adjust the list item style */
+.ingredients-list li {
+    list-style: disc; /* Use disc bullets for list items */
+    margin-bottom: 5px; /* Add spacing between items */
+}

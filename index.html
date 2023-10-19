@@ -1,0 +1,121 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Recipe Website</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Recipe Website</h1>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search for recipes...">
+            <button onclick="searchRecipes()">Search</button>
+        </div>
+    </header>
+    <main>
+        <section class="recipes">
+           
+        </section>
+        <section class="recipe">
+           
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="https://th.bing.com/th/id/OIP.ueHppfRf52CDn841Rpj8IwHaHa?pid=ImgDet&rs=1" alt="Your Logo">
+                <h2>Food Recipes</h2>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 Food Recipes | Designed by Elite
+        </div>
+       
+    </footer>
+    
+    
+    <section class="recipes">
+        <article class="recipe">
+            <img src="https://i.pinimg.com/474x/08/cf/82/08cf82fa8be5bd60894ea5b82c168c3f.jpg" alt="Recipe 1">
+            <h2>Goat Cheese Pomegranate Brussels Sprouts </h2>
+            <p>This gorgeous warm salad with nutty roasted Brussels sprouts, sweet-tart pomegranate seeds and creamy goat cheese is perfect for any winter meal from a weeknight dinner to Christmas dinner or any other holiday..... know more</p>
+            <a href="recipe1.html" class="btn">View Recipe</a>
+        </article>
+
+    
+        <article class="recipe">
+            <img src="https://th.bing.com/th/id/OIP.YLCljGPKAB79Mt3wGB8ddQHaHa?pid=ImgDet&rs=1" alt="Recipe 2">
+            <h2>Grilled Tilapia Piccata</h2>
+            <p>Grilled Tilapia Piccata is a quick and easy recipe that can be made in less than half an hour. The dish consists of flaky white fish that is grilled and drizzled with a creamy piccata sauce. The sauce is made with butter, garlic, chicken stock, cornstarch, lemon juice, lemon zest, heavy cream, and capers. The recipe is gluten-free and low in calories .
+
+                If you’re looking for a quick and easy grilled dinner, this recipe is perfect for you. You can use fresh or frozen tilapia filets for this grilled fish recipe..........know more </p>
+            <a href="recipe2.html" class="btn">View Recipe</a>
+        </article>
+        <article class="recipe">
+            <img src="https://th.bing.com/th/id/OIP.EcTF7_-589VxweNOEPQwZwHaFj?pid=ImgDet&rs=1" alt="Recipe 3">
+            <h2>Southwest Beef Casserole </h2>
+            <p>Casseroles are always fun to make and are a great comfort food that families really enjoy. There’s nothing fancy about them but are they ever tasty! These are yummy weeknight meals that home cooks enjoy making.How To Make A Southwest Beef Casserole.</p>
+           
+            <p>Casseroles are such a go-to meal because of the different and fun ways they can be made. Plus, casseroles are no doubt a great comfort food for families to really enjoy. Clubfoody.com shares with us this tasty and savory southwest beef casserole recipe that will satisfy every family member’s expectation of good food. ..... know more</p>
+            <a href="recipe3.html" class="btn">View Recipe</a>
+        </article>
+        <article class="recipe">
+            <img src="https://i.pinimg.com/originals/f3/21/5f/f3215fdae97eeb1153a644df91b3caa0.jpg" alt="Recipe 4">
+            <h2>Asian Orange Chicken </h2>
+            <p>This orange chicken recipe is sticky, sweet, and delicious. It tastes similar to the orange chicken from a popular Chinese restaurant in the mall! It's easier to make than you think for delicious takeout at home.</p>
+           
+            <p>Orange chicken is a popular item at Chinese restaurants. It consists of small cubes of chicken that are breaded, pan-fried, and coated in an orange sauce.
+
+The orange sauce is sweet with a little tang and a hint of spice. It's mainly known for its orange flavor (as you can guess from the name). It's typically made with orange juice and orange zest to achieve the citrus flavor.Even though you see orange chicken at Chinese restaurants in America, it's not a typical Chinese dish. Instead, it was popularized by American Chinese restaurants — alongside General Tso's chicken, which is also not traditional Chinese food...... know more</p>
+            <a href="recipe4.html" class="btn">View Recipe</a>
+        </article>
+        <article class="recipe">
+            <img src="https://th.bing.com/th/id/R.13a88a3ae137269732af5b2d33907d2d?rik=OwgoQ4nx7C2hpw&riu=http%3a%2f%2fwww.indrani-will-teach.com%2fwp-content%2fuploads%2f2016%2f08%2fDSC029051.jpg&ehk=QAgDbJUv4EY9dCSY9xA6DsppMD72%2bzdl1isXHqcziM4%3d&risl=&pid=ImgRaw&r=0" alt="Recipe 5">
+            <h2>Moti Biriyani</h2>
+            <p>Indian food never ceases to astonish us with its varied range of delicacies. And if you're a non-vegetarian looking for some delectable chicken dishes, you're in for a treat! There's no denying that chicken has a strong fan base among non-vegetarians. And why not? It has flavourful, juicy, and rich texture that can quickly transform most of your meals into a feast. We're sure you've eaten a range of chicken meals, from curries to biryani to snacks and more. So, to introduce you to a new and interesting chicken-based recipe, here's a delicious recipe for Moti Biryani! ......know more </p>
+            <a href="recipe5.html" class="btn">View Recipe</a>
+        </article>
+    </section>
+    
+    
+
+        
+    <script>
+        function searchRecipes() {
+            const searchQuery = document.getElementById("search").value.toLowerCase();
+            const recipes = document.querySelectorAll(".recipe");
+    
+            recipes.forEach(recipe => {
+                const title = recipe.querySelector("h2").textContent.toLowerCase();
+                if (title.includes(searchQuery)) {
+                    recipe.style.display = "block";
+                } else {
+                    recipe.style.display = "none";
+                }
+            });
+        }
+    </script>
+
+<section class="recipes">
+
+</section>
+
+<section class="recipe">
+  
+</section>
+
+    
+</body>
+</html>
